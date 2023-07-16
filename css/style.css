@@ -307,10 +307,6 @@ a {
   }
 }
 
-body {
-  background: teal;
-}
-
 .container {
   max-width: 375px;
   margin: 0 auto;
@@ -389,4 +385,106 @@ body {
     font-size: 19px;
     font-weight: 500;
   }
+}
+
+.sidebar-filtr.open .sidebar-filtr__list {
+  display: block;
+}
+.sidebar-filtr.open .sidebar-filtr__title::before {
+  -webkit-transform: translate(0%, -50%) rotate(180deg);
+          transform: translate(0%, -50%) rotate(180deg);
+}
+.sidebar-filtr__title {
+  color: #454545;
+  font-family: Jost;
+  font-size: 19px;
+  position: relative;
+  padding: 20px 0;
+}
+@media (min-width: 768px) {
+  .sidebar-filtr__title {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+@media (min-width: 1440px) {
+  .sidebar-filtr__title {
+    max-width: 220px;
+  }
+}
+.sidebar-filtr__title::before {
+  content: "";
+  background-image: url(../img/base/arrow-bottom.svg);
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media (min-width: 1440px) {
+  .sidebar-filtr__title::before {
+    display: none;
+  }
+}
+.sidebar-filtr__list {
+  display: none;
+  position: relative;
+  padding: 15px 0;
+}
+@media (min-width: 1440px) {
+  .sidebar-filtr__list {
+    display: block;
+  }
+}
+.sidebar-filtr__list::before {
+  content: "";
+  background: linear-gradient(117.41deg, #3ca0d2 11.27%, #48dca6 67.35%);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sidebar-filtr__list::after {
+  content: "";
+  background: linear-gradient(117.41deg, #3ca0d2 11.27%, #48dca6 67.35%);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.sidebar-filtr__list li {
+  margin: 0 0 9px 0;
+  color: #363636;
+  font-family: Jost;
+  font-size: 19px;
+  font-weight: 300;
+}
+.sidebar-filtr__list li.sidebar-filtr__current {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: Jost;
+  font-size: 19px;
+  font-weight: 600;
+  background: linear-gradient(132deg, #3ca0d2 0%, #48dca6 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.sidebar-filtr__current::after {
+  content: "";
+  background: linear-gradient(117.41deg, #3ca0d2 11.27%, #48dca6 67.35%);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
 }
