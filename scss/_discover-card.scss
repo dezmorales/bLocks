@@ -1,0 +1,66 @@
+.discover-card {
+  width: 390px;
+  height: 350px;
+  position: relative;
+  padding: 40px 10px 10px 35px;
+
+  &:hover &__front-bg {
+    // width: 410px;
+    // height: 369px;
+    transform: translate(-3px, 0);
+  }
+  &:hover &__back-img {
+    opacity: 0;
+  }
+
+  &__back {
+  }
+
+  &__back-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  &__front {
+  }
+
+  &__front-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease;
+  }
+  &__front-icon {
+    position: relative;
+    z-index: 1;
+    margin-left: -11px;
+    margin-bottom: 20px;
+    pointer-events: none;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    color: #454545;
+    font-family: Nunito;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 326px;
+    pointer-events: none;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+    color: #454545;
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 326px;
+    pointer-events: none;
+  }
+}

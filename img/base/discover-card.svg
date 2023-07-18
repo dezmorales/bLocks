@@ -1,0 +1,84 @@
+<svg id="discover-card" width="400" height="367" viewBox="0 0 390 367" fill="none"
+    xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet">
+    <defs>
+        <style>
+            #discover-card{
+            cursor: pointer;
+            }
+            .path-1 {
+            }
+            .path-2 {
+            opacity: 0;
+            transform:scale(0.8);
+            }
+
+            #discover-card:hover .path-2 {
+            opacity: 1;
+            transform: scale(1);
+            }
+            #discover-card:hover .path-1 {
+            display: none;
+            }
+
+        </style>
+    </defs>
+    <path class="test"
+        d="M14 44.1133C14 23.7841 33.7931 9.34122 53.153 15.5437L376.577 119.161C382.787 121.15 387 126.924 387 133.445V338C387 346.284 380.284 353 372 353H29C20.7157 353 14 346.284 14 338V44.1133Z"
+        fill="white" fill-opacity="0.98" shape-rendering="crispEdges" />
+
+    <g filter="url(#filter1_f_3003_18978)">
+        <path class="path-1"
+            d="M53.0615 15.8294L376.485 119.446C382.571 121.396 386.7 127.055 386.7 133.445V338C386.7 346.119 380.119 352.7 372 352.7H29C20.8814 352.7 14.3 346.119 14.3 338V44.1133C14.3 23.9874 33.8952 9.68894 53.0615 15.8294Z"
+            stroke="url(#gradient-1)" stroke-opacity="0.8" stroke-width="0.6" />
+
+    </g>
+    <g filter="url(#filter0_f_2679_18109)">
+        <path class="path-2"
+            d="M3.39844 34.2277C3.39844 13.5306 23.5497 -1.17359 43.2599 5.14108L383.317 114.087C389.432 116.046 393.581 121.732 393.581 128.154V343.229C393.581 351.387 386.968 358 378.81 358H18.1699C10.0118 358 3.39844 351.387 3.39844 343.229V34.2277Z"
+            stroke="url(#gradient-2)" stroke-opacity="0.8" stroke-width="2" />
+    </g>
+
+    <defs>
+        <filter id="filter0_bd_3003_18978" x="0" y="0.0917969" width="401" height="366.908"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="4.5" />
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_3003_18978" />
+            <feColorMatrix in="SourceAlpha" type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="7" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix"
+                values="0 0 0 0 0.0980392 0 0 0 0 0.494118 0 0 0 0 0.694118 0 0 0 0.1 0" />
+            <feBlend mode="normal" in2="effect1_backgroundBlur_3003_18978"
+                result="effect2_dropShadow_3003_18978" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_3003_18978"
+                result="shape" />
+        </filter>
+        <filter id="filter1_f_3003_18978" x="12" y="12.0918" width="377" height="342.908"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_3003_18978" />
+        </filter>
+        <filter id="filter0_f_2679_18109" x="0.29558" y="0.559252" width="396.389" height="360.544"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="1.05143" result="effect1_foregroundBlur_2679_18109" />
+        </filter>
+        <linearGradient id="gradient-1" x1="69.5001" y1="16.5" x2="151.108" y2="336.255"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#3CA0D2" />
+            <stop offset="0.614583" stop-color="#48DCA6" />
+            <stop offset="1" stop-color="white" />
+        </linearGradient>
+        <linearGradient id="gradient-2" x1="60.7528" y1="5.19426" x2="146.558" y2="341.394"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#48DCA6" />
+            <stop offset="0.614583" stop-color="#3CA0D2" />
+            <stop offset="1" stop-color="#48DCA6" />
+        </linearGradient>
+    </defs>
+</svg>
